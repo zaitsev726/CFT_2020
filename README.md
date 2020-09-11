@@ -3,17 +3,16 @@
 
 В файле src/main/resources/application.properies Вы найдете конфигурацию приложения. Рассмотрим ее подробнее:
 
-server.port - номер порта приложения (изначально стоит 8080)
-spring.h2.console.enabled=true - говорит Spring стартовать административный инструмент H2, чтобы войти в данный инстурмент в браузере (http://localhost:8080/h2)
-spring.h2.console.path=/h2 - путь по которому консоль будет доступна
-spring.datasource.url=jdbc:h2:mem:memDb - данная конфигурация говорит Spring, что Вы хотите использовать базу данных H2 в оперативной памяти
-spring.datasource.driverClassName=org.h2.Driver - название JDBC драйвера 
-spring.datasource.username=sa - имя пользователя базы данных (по умолчанию)
-spring.datasource.password= - пароль для входа (по умолчанию)
-
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect - имя целевой базы данных
-spring.jpa.hibernate.ddl-auto=create-drop -Hibernate сначала удаляет сущесвтующие таблицы, а затем создает новые. Hibernate удалит базу данных после завершения операций. ( по умолчанию)
-spring.jpa.show-sql=true - включает логирование SQL
+1) server.port - номер порта приложения (изначально стоит 8080)
+2) spring.h2.console.enabled=true - говорит Spring стартовать административный инструмент H2, чтобы войти в данный инстурмент в браузере (http://localhost:8080/h2)
+3) spring.h2.console.path=/h2 - путь по которому консоль будет доступна
+4) spring.datasource.url=jdbc:h2:mem:memDb - данная конфигурация говорит Spring, что Вы хотите использовать базу данных H2 в оперативной памяти
+5) spring.datasource.driverClassName=org.h2.Driver - название JDBC драйвера 
+6) spring.datasource.username=sa - имя пользователя базы данных (по умолчанию)
+7) spring.datasource.password= - пароль для входа (по умолчанию)
+8) spring.jpa.database-platform=org.hibernate.dialect.H2Dialect - имя целевой базы данных
+9) spring.jpa.hibernate.ddl-auto=create-drop -Hibernate сначала удаляет сущесвтующие таблицы, а затем создает новые. Hibernate удалит базу данных после завершения операций. ( по умолчанию)
+10) spring.jpa.show-sql=true - включает логирование SQL
 
 Инструкция по запуску приложения.
 1. Скачайте проект.
