@@ -36,6 +36,7 @@ curl -X PUT localhost:8080/{productName}/update/{id} -H "Content-Type: applicati
 (обновление Ноутбука с id=2)
 
 Далее будут примеры команд, которые выдают сообщение об ошибке
+
 6. curl -X PUT localhost:8080/Desktop/update/999 -H "Content-Type: application/json" -d "{\"serial\": 13256}" (не сущесвтует Настольный компьютер с id=999)
 7. curl -X POST localhost:8080/Notebook/add -H "Content-Type: application/json" -d "{\"serial\": 1345123, \"manufacturer\": \"Asus\", \"cost\": 143.5, \"size\": 1, \"quantity\": 33"}" (неправильный размер Ноутбука)
 8. curl -X POST localhost:8080/Desktop/add -H "Content-Type: application/json" -d "{\"serial\": 174392, \"manufacturer\": \"Apple\", \"cost\": 134.2, \"form\": \"Deskktop\", \"quantity\": 13"}" (неправильная форма Настольного комьютера)
